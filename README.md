@@ -1,5 +1,10 @@
 # libbccgp - BCCGP-srqt and Bulletproofs implementations #
 
+**Note**: this library is slower than optimized implementations of bulletproofs, notably
+[dalek-cryptography/bulletproofs](https://github.com/dalek-cryptography/bulletproofs).
+Please use that library when benchmarking Bulletproofs! (But you may find [libbccgp/pws.py](libbccgp/pws.py)
+useful as a way of compiling circuits to the arithmetization that Bulletproofs requires.)
+
 This library contains indepent re-implementations of the following two protocols:
 
 [BCCGP-sqrt](https://eprint.iacr.org/2016/263), from 
